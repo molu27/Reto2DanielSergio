@@ -1,4 +1,4 @@
-package reto;
+package reto2;
 
 public class funciones1 {
 
