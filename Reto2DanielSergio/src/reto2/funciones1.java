@@ -30,26 +30,32 @@ public class funciones1 {
 			System.out.println("0. Salir: ");
 			String numt = sc.nextLine();
 			opcion = Integer.parseInt(numt);
-			
-			//Aquí hacemos el panel añadiendo las opciones y las conversiones con la función que habíamos configurado previamente y así con todos los demás.
+
+			// Aquí hacemos el panel añadiendo las opciones y las conversiones con la
+			// función que habíamos configurado previamente y así con todos los demás.
 			switch (opcion) {
+			// Opción para pasar de Millas a Km
 			case 1:
 				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Millas a Km: " + (funciones1.MillasAKm(n1)));
 				break;
+			// Opción para pasar de Km a Millas
 			case 2:
 				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Km a Millas: " + (funciones1.KmAMillas(n1)));
 				break;
+			// Salir del menú tras elegir la opción 0
 			case 0:
 				System.out.println("Salir");
 				break;
+			// Responde al error en caso de no poner un número
 			default:
 				System.out.println("Te has equivocado");
 				break;
 			}
 		} while (opcion != 0);
 	}
+
 	public static void MenuPeso(Scanner sc) {
 		int opcion = 0;
 		double n1 = 0;
@@ -60,29 +66,29 @@ public class funciones1 {
 			System.out.println("0. Salir: ");
 			String numt = sc.nextLine();
 			opcion = Integer.parseInt(numt);
-			//Aquí hacemos el panel añadiendo las opciones y las conversiones con la función que habíamos configurado previamente y así con todos los demás.
+			// Aquí hacemos el panel añadiendo las opciones y las conversiones con la
+			// función que habíamos configurado previamente y así con todos los demás.
 			switch (opcion) {
+			// Opción para pasar de Kg a Libras
 			case 1:
-				
 				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Kg a Libras: " + (funciones1.KgALibras(n1)));
 				break;
+			// Opción para pasar de Libras a Kg
 			case 2:
 				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Libras a Kg: " + (funciones1.LibrasAKg(n1)));
 				break;
+			// Salir del menú tras elegir la opción 0
 			case 0:
 				System.out.println("Salir");
 				break;
+			// Responde al error tras no poner un número
 			default:
 				System.out.println("Te has equivocado");
 				break;
 			}
 		} while (opcion != 0);
-		}
-			
-		
 	}
 
-
-
+}
