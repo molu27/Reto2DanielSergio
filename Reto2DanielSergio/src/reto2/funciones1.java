@@ -31,14 +31,14 @@ public class funciones1 {
 			String numt = sc.nextLine();
 			opcion = Integer.parseInt(numt);
 			
-
+			//Aquí hacemos el panel añadiendo las opciones y las conversiones con la función que habíamos configurado previamente y así con todos los demás.
 			switch (opcion) {
 			case 1:
-				n1 = Funciones.dimeDouble("Dime numero", sc);
+				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Millas a Km: " + (funciones1.MillasAKm(n1)));
 				break;
 			case 2:
-				n1 = Funciones.dimeDouble("Dime numero", sc);
+				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Km a Millas: " + (funciones1.KmAMillas(n1)));
 				break;
 			case 0:
@@ -60,14 +60,15 @@ public class funciones1 {
 			System.out.println("0. Salir: ");
 			String numt = sc.nextLine();
 			opcion = Integer.parseInt(numt);
-			
+			//Aquí hacemos el panel añadiendo las opciones y las conversiones con la función que habíamos configurado previamente y así con todos los demás.
 			switch (opcion) {
 			case 1:
-				n1 = Funciones.dimeDouble("Dime numero", sc);
+				
+				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Kg a Libras: " + (funciones1.KgALibras(n1)));
 				break;
 			case 2:
-				n1 = Funciones.dimeDouble("Dime numero", sc);
+				n1 = Funciones.dimeDouble("Dime un numero", sc);
 				System.out.println("Libras a Kg: " + (funciones1.LibrasAKg(n1)));
 				break;
 			case 0:
