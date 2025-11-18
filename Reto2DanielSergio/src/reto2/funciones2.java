@@ -2,9 +2,7 @@ package reto2;
 
 import java.util.Scanner;
 
-import reto.Funciones;
-import reto.funciones1;
-import reto.funciones2;
+
 
 public class funciones2 {
 	public static double celsiusAFahrenheit(double c) {
@@ -44,7 +42,7 @@ public class funciones2 {
 		
 	}
 	
-switch
+
 	
 	
 	
