@@ -33,24 +33,22 @@ public class funciones2 {
 			// Aquí hacemos el panel añadiendo las opciones y las conversiones con la
 			// función que habíamos configurado previamente y así con todos los demás.
 			switch (opcio) {
-			// Celsius a Fahrenheit
-
+			// Menú de Celsius a Fahrenheit
 			case 1:
 				n1 = Funciones.dimeDouble("Dime los celsius", sc);
 				System.out.println(funciones2.celsiusAFahrenheit(n1));
-
 				break;
-            // Farehnheit a Celsius
+            // Menú de Farehnheit a Celsius
 			case 2:
 				n1 = Funciones.dimeDouble("Dime los Farehrenheit", sc);
 				System.out.println(funciones2.fahrenheitACelsius(n1));
-
 				break;
+			//Salir al elegir 0
 			case 0:
 				System.out.println("Salir");
 
 				break;
-
+			//Responde al error de no escribir numero
 			default:
 				System.out.println("Opción incorrecta");
 				break;
@@ -69,23 +67,27 @@ public class funciones2 {
 			System.out.println("0. Salir");
 			String opcion = sc.nextLine();
 			opcio = Integer.parseInt(opcion);
+			// Aquí hacemos el panel añadiendo las opciones y las conversiones con la
+			// función que habíamos configurado previamente y así con todos los demás.
 			switch (opcio) {
+			// Menú de Litros a Galones
 			case 1:
 				n1 = Funciones.dimeDouble("Dime los litros", sc);
 				System.out.println(funciones2.litrosAGalones(n1));
 
 				break;
-
+			// Menú de Galones a Litros
 			case 2:
 				n1 = Funciones.dimeDouble("Dime los galones", sc);
 				System.out.println(funciones2.galonesALitros(opcio));
 
 				break;
+			//Salir al poner 0
 			case 0:
 				System.out.println("Salir");
 
 				break;
-
+			//Responde al error de no escribir numero
 			default:
 				System.out.println("Opción incorrecta");
 				break;
